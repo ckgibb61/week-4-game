@@ -15,20 +15,17 @@ var gemsValue2 = 1 + Math.floor(Math.random() * 12);;
 var gemsValue3 = 1 + Math.floor(Math.random() * 12);;
 var gemsValue5 = 1 + Math.floor(Math.random() * 12);;
 
-var guessSoFar = [];
 
-// var userScore = gussseSoFar
-
-function reset(){
-    var minersGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-    $("#miners").html(minersGuess);
-    var gemsValue1 = 1 + Math.floor(Math.random() * 12);;
-    var gemsValue2 = 1 + Math.floor(Math.random() * 12);;
-    var gemsValue3 = 1 + Math.floor(Math.random() * 12);;
-    var gemsValue5 = 1 + Math.floor(Math.random() * 12);;
-    var yourScore = 0;
-    $("#score").html(yourScore);
-};
+// function reset(){
+//     var minersGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+//     $("#miners").html(minersGuess);
+//     var gemsValue1 = 1 + Math.floor(Math.random() * 12);;
+//     var gemsValue2 = 1 + Math.floor(Math.random() * 12);;
+//     var gemsValue3 = 1 + Math.floor(Math.random() * 12);;
+//     var gemsValue5 = 1 + Math.floor(Math.random() * 12);;
+//     var yourScore = 0;
+//     $("#score").html(yourScore);
+// };
 
 
 function startGame() {
@@ -40,19 +37,19 @@ function startGame() {
         yourScore = yourScore + gemsValue1;
         $("#score").html(yourScore);
        
-        if (yourScore == minersGuess) {
-            alert("The gems are yours!");
+        if (yourScore === minersGuess) {
+            alert("Winner, the gems are yours!");
             console.log("winner");
             wins++;
             $("#win").html(wins);
-            reset ();
+            startGame();
         }
         else if (yourScore > minersGuess) {
             alert("You guessed too high! No gems for you!");
             losses++;
             console.log("loser");
             $("#lose").html(losses);
-            reset ();
+            startGame();
         };
     });
 
@@ -66,14 +63,14 @@ function startGame() {
             console.log("winner");
             wins++;
             $("#win").html(wins);
-            reset ();
+            startGame();
         }
         else if (yourScore > minersGuess) {
             alert("You guessed too high! No gems for you!");
             losses++;
             console.log("loser");
             $("#lose").html(losses);
-            reset ();
+            startGame();
         };
     });  
 
@@ -87,14 +84,14 @@ function startGame() {
             console.log("winner");
             wins++;
             $("#win").html(wins);
-            reset ();
+            startGame();
         }
         else if (yourScore > minersGuess) {
             alert("You guessed too high! No gems for you!");
             losses++;
             console.log("loser");
             $("#lose").html(losses);
-            reset ();
+            startGame();
         };
     });  
 
@@ -108,14 +105,14 @@ function startGame() {
             console.log("winner");
             wins++;
             $("#win").html(wins);
-            reset ();
+            startGame();
         }
         else if (yourScore > minersGuess) {
             alert("You guessed too high! No gems for you!");
             losses++;
             console.log("loser");
             $("#lose").html(losses);
-            reset ();
+            startGame();
         };
     });  
 
