@@ -1,0 +1,71 @@
+body {
+    background: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 26pt;
+    text-align: center;
+    color: goldenrod;
+}
+
+.instructions {
+    color: whitesmoke; 
+    text-align: center;
+    font-size: 16pt;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.Miner {
+    color: whitesmoke;
+    float: right;
+    margin-right: 160px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14pt;
+}
+
+.background {
+    background: url("../images/mining.png");
+    width: 60%;
+    height: 620px;
+    margin: 50px;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#gone {
+    width: 100px;
+    height: 60px;
+    margin-top: 450px;
+    margin-left: 80px;
+}
+
+#gtwo {
+    width: 100px;
+    height: 70px;
+    margin-left: 12px;
+}
+
+#gthree {
+    width: 100px;
+    height: 70px;
+    margin-left: 12px;
+}
+
+#gfive {
+    width: 100px;
+    height: 60px;
+    margin-left: 12px;
+}
