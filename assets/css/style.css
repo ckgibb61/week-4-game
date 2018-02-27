@@ -8,6 +8,8 @@ h1 {
     font-size: 26pt;
     text-align: center;
     color: goldenrod;
+    padding-bottom: 2px;
+    padding-top: 10px;
 }
 
 .instructions {
@@ -33,25 +35,27 @@ h1 {
     background-color: #5c2bab;
 }
 
-.picture {
-    background: url("../images/mining.png");
-    width: 60%;
-    height: 620px;
+#pic {
+    width: 655px;
     margin: 50px;
+    float: left;
 }
 
 .gems {
     float: right;
-    margin-top: 80px;
-    margin-left: 575px;
-    margin-right: 18px;
+    margin-top: -152px;
+    /* margin-left: 435px; */
+    /* margin-right: 45px; */
+    margin: 78px;
+    background-color: #373738;
+    padding: 10px;
 }
 
 #gone {
     width: 100px;
     height: 60px;
     margin-top: 10px;
-    margin-left: 80px;
+    margin-left: 12px;
 }
 
 #gtwo {
@@ -70,16 +74,17 @@ h1 {
     width: 100px;
     height: 60px;
     margin-left: 12px;
+    padding-right: 7px;
 }
 
-@media only screen and (max-width: 980px){
+/* /* @media only screen and (max-width: 980px){
   .instructions {
       width: 88%;
   }
   .Miner {
       /* width: 92%;
       text-align: center; */
-      margin-right: 80px;
+      /* margin-right: 80px;
   }
   .picture {
       width: 92%;
@@ -90,4 +95,4 @@ h1 {
     align-items: center;
   }
 
-  }
+  } */
