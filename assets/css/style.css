@@ -33,23 +33,24 @@ h1 {
     background-color: #5c2bab;
 }
 
-.background {
+.picture {
     background: url("../images/mining.png");
     width: 60%;
     height: 620px;
     margin: 50px;
 }
 
-.clearfix:after {
-    content: '';
-    display: block;
-    clear: both;
+.gems {
+    float: right;
+    margin-top: 80px;
+    margin-left: 575px;
+    margin-right: 18px;
 }
 
 #gone {
     width: 100px;
     height: 60px;
-    margin-top: 450px;
+    margin-top: 10px;
     margin-left: 80px;
 }
 
@@ -70,3 +71,23 @@ h1 {
     height: 60px;
     margin-left: 12px;
 }
+
+@media only screen and (max-width: 980px){
+  .instructions {
+      width: 88%;
+  }
+  .Miner {
+      /* width: 92%;
+      text-align: center; */
+      margin-right: 80px;
+  }
+  .picture {
+      width: 92%;
+      margin-right: 30px;
+  }
+  .gems {
+    margin-left: 654px;
+    align-items: center;
+  }
+
+  }
