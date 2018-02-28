@@ -1,5 +1,6 @@
 body {
     background: black;
+    /* background: url("../images/Dirt-brown.png"); */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -35,6 +36,11 @@ h1 {
     background-color: #5c2bab;
 }
 
+#man {
+    height: 200px;
+    padding: 6px;
+}
+
 #pic {
     width: 655px;
     margin: 50px;
@@ -42,13 +48,20 @@ h1 {
 }
 
 .gems {
-    float: right;
-    margin-top: -152px;
+    float: left;
+    margin-top: -135px;
     /* margin-left: 435px; */
     /* margin-right: 45px; */
-    margin: 78px;
-    background-color: #373738;
+    margin: 28px;
+    /* background-color: #373738; */
     padding: 10px;
+}
+
+.g1 {
+    margin: 10px;
+    padding: 4px;
+    align-items: center;
+    background-color: #c5c5c5;
 }
 
 #gone {
@@ -57,19 +70,38 @@ h1 {
     margin-top: 10px;
     margin-left: 12px;
 }
+.g2 {
+    margin: 10px;
+    padding: 4px;
+    align-items: center;
+    background-color: #001084;
+}
 
 #gtwo {
     width: 100px;
     height: 70px;
     margin-left: 12px;
+    
 }
 
+.g3 {
+    margin: 10px;
+    padding: 4px;
+    align-items: center;
+    background-color: #c5c5c5;
+}
 #gthree {
     width: 100px;
     height: 70px;
     margin-left: 12px;
 }
 
+.g5 {
+    margin: 10px;
+    padding: 4px;
+    align-items: center;
+    background-color: #001084;
+}
 #gfive {
     width: 100px;
     height: 60px;
@@ -77,22 +109,30 @@ h1 {
     padding-right: 7px;
 }
 
-/* /* @media only screen and (max-width: 980px){
-  .instructions {
-      width: 88%;
-  }
-  .Miner {
-      /* width: 92%;
-      text-align: center; */
-      /* margin-right: 80px;
-  }
-  .picture {
-      width: 92%;
-      margin-right: 30px;
-  }
-  .gems {
-    margin-left: 654px;
-    align-items: center;
-  }
 
-  } */
+@media only screen and (max-width: 980px) {
+
+#pic {
+    width: 850px;
+    /* align-self: center; */
+    margin-left: 62px;
+}
+.Miner {
+    margin-right: 45px;
+    margin-bottom: 15px;
+    margin-top: 14px;
+    width: 75%;
+    padding: 82px;
+}
+
+#man {
+    float: right;
+    margin-top: -122px;
+    margin-bottom: -12px;
+}
+.gems {
+    margin: 42px;
+    margin-top: -381px;
+}
+
+}

@@ -16,44 +16,17 @@ var gemsValue3 = 1 + Math.floor(Math.random() * 12);;
 var gemsValue5 = 1 + Math.floor(Math.random() * 12);;
 
 
-function reset(){
-    var minersGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+function reset() {
+    minersGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     $("#miners").html(minersGuess);
-    var gemsValue1 = 1 + Math.floor(Math.random() * 12);;
-    var gemsValue2 = 1 + Math.floor(Math.random() * 12);;
-    var gemsValue3 = 1 + Math.floor(Math.random() * 12);;
-    var gemsValue5 = 1 + Math.floor(Math.random() * 12);;
-    var yourScore = 0;
+    gemsValue1 = 1 + Math.floor(Math.random() * 12);;
+    gemsValue2 = 1 + Math.floor(Math.random() * 12);;
+    gemsValue3 = 1 + Math.floor(Math.random() * 12);;
+    gemsValue5 = 1 + Math.floor(Math.random() * 12);;
+    yourScore = 0;
     $("#score").html(yourScore);
 };
 
-// function victory() {
-//     alert("winner");
-//     wins++;
-//     $("win").html(wins);
-//     var minersGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-//     $("#miners").html(minersGuess);
-//     var gemsValue1 = 1 + Math.floor(Math.random() * 12);;
-//     var gemsValue2 = 1 + Math.floor(Math.random() * 12);;
-//     var gemsValue3 = 1 + Math.floor(Math.random() * 12);;
-//     var gemsValue5 = 1 + Math.floor(Math.random() * 12);;
-//     var yourScore = 0;
-//     $("#score").html(yourScore);
-// };
-
-// function loser() {
-//     alert("loser");
-//     losses++;
-//     $("lose").html(losses);
-//     var minersGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-//     $("#miners").html(minersGuess);
-//     var gemsValue1 = 1 + Math.floor(Math.random() * 12);;
-//     var gemsValue2 = 1 + Math.floor(Math.random() * 12);;
-//     var gemsValue3 = 1 + Math.floor(Math.random() * 12);;
-//     var gemsValue5 = 1 + Math.floor(Math.random() * 12);;
-//     var yourScore = 0;
-//     $("#score").html(yourScore);
-// };
 
 function startGame() {
     $("#score").html(yourScore);
@@ -64,11 +37,11 @@ function startGame() {
         yourScore = yourScore + gemsValue1;
         $("#score").html(yourScore);
        
-        if (yourScore === minersGuess) {
+        if (yourScore == minersGuess) {
             console.log("winner");
             alert("Winner! Don't spend it all in one place!");
             wins++;
-            $("#wins").html(wins);
+            $("#win").html(wins);
             reset();
         }
         else if (yourScore > minersGuess) {
@@ -84,21 +57,22 @@ function startGame() {
         console.log("gtwo");
         yourScore = yourScore + gemsValue2;
         $("#score").html(yourScore);  
-       
-        if (yourScore === minersGuess) {
-            console.log("winner");
-            alert("Winner! Don't spend it all in one place!");
-            wins++;
-            $("#wins").html(wins);
-            reset();
-        }
-        else if (yourScore > minersGuess) {
+       console.log("yourScore", typeof yourScore);
+        if (yourScore > minersGuess) {
             console.log("loser");
             alert("Loser's don't get gems!");
             losses++;
             $("#lose").html(losses);
             reset();
+        }
+        else  if (yourScore == minersGuess) {
+            console.log("winner");
+            alert("Winner! Don't spend it all in one place!");
+            wins++;
+            $("#win").html(wins);
+            reset();
         };
+        
     });  
 
     $("#gthree").on("click", function(){
@@ -106,11 +80,11 @@ function startGame() {
         yourScore = yourScore + gemsValue3;
         $("#score").html(yourScore);  
        
-        if (yourScore === minersGuess) {
+        if (yourScore == minersGuess) {
             console.log("winner");
             alert("Winner! Don't spend it all in one place!");
             wins++;
-            $("#wins").html(wins);
+            $("#win").html(wins);
             reset();
         }
         else if (yourScore > minersGuess) {
@@ -127,11 +101,11 @@ function startGame() {
         yourScore = yourScore + gemsValue5;
         $("#score").html(yourScore);  
 
-        if (yourScore === minersGuess) {
+        if (yourScore == minersGuess) {
             console.log("winner");
             alert("Winner! Don't spend it all in one place!");
             wins++;
-            $("#wins").html(wins);
+            $("#win").html(wins);
             reset();
         }
         else if (yourScore > minersGuess) {
