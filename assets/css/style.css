@@ -1,138 +1,26 @@
 body {
-    background: black;
-    /* background: url("../images/Dirt-brown.png"); */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url("../images/mada2.png") no-repeat right fixed;
 }
 
-h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 26pt;
-    text-align: center;
-    color: goldenrod;
-    padding-bottom: 2px;
-    padding-top: 10px;
+#jumbo {
+    width: 60%;
+    margin-top: 60px;
+    margin-left: 20px;
 }
 
-.instructions {
-    color: whitesmoke; 
-    text-align: center;
-    font-size: 16pt;
+.btn-primary {
+    margin-left: 18px;
 }
 
-.clearfix:after {
-    content: '';
-    display: block;
-    clear: both;
+/* #pen {
+    height: 250px;
+} */
+.questions {
+    /* border-style: solid; */
 }
 
-.Miner {
-    color: whitesmoke;
-    float: right;
-    margin-right: 160px;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    font-size: 14pt;
-    background-color: #5c2bab;
-}
+#timer {
 
-#man {
-    height: 200px;
-    padding: 6px;
-}
-
-#pic {
-    width: 655px;
-    margin: 50px;
-    float: left;
-}
-
-.gems {
-    float: left;
-    margin-top: -135px;
-    /* margin-left: 435px; */
-    /* margin-right: 45px; */
-    margin: 28px;
-    /* background-color: #373738; */
-    padding: 10px;
-}
-
-.g1 {
-    margin: 10px;
-    padding: 4px;
-    align-items: center;
-    background-color: #c5c5c5;
-}
-
-#gone {
-    width: 100px;
-    height: 60px;
-    margin-top: 10px;
-    margin-left: 12px;
-}
-.g2 {
-    margin: 10px;
-    padding: 4px;
-    align-items: center;
-    background-color: #001084;
-}
-
-#gtwo {
-    width: 100px;
-    height: 70px;
-    margin-left: 12px;
-    
-}
-
-.g3 {
-    margin: 10px;
-    padding: 4px;
-    align-items: center;
-    background-color: #c5c5c5;
-}
-#gthree {
-    width: 100px;
-    height: 70px;
-    margin-left: 12px;
-}
-
-.g5 {
-    margin: 10px;
-    padding: 4px;
-    align-items: center;
-    background-color: #001084;
-}
-#gfive {
-    width: 100px;
-    height: 60px;
-    margin-left: 12px;
-    padding-right: 7px;
 }
 
 
-@media only screen and (max-width: 980px) {
-
-#pic {
-    width: 850px;
-    /* align-self: center; */
-    margin-left: 62px;
-}
-.Miner {
-    margin-right: 45px;
-    margin-bottom: 15px;
-    margin-top: 14px;
-    width: 75%;
-    padding: 82px;
-}
-
-#man {
-    float: right;
-    margin-top: -122px;
-    margin-bottom: -12px;
-}
-.gems {
-    margin: 42px;
-    margin-top: -381px;
-}
-
-}
